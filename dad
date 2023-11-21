@@ -1,6 +1,6 @@
 #!/bin/bash
 
-  # (C) David Eisenhardt  GPL v2.0
+# (C) David Eisenhardt  GPL v2.0
 # https://github.com/deisenhardt/dad/
 
 #{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}
@@ -9,17 +9,16 @@
 
 usage()
 {
-  printf "\n\n Don't argue with dad \n\n"
+  printf "\n Don't argue with dad \n"
   exit 1
 }
-
   
 ###########################################################################
 # main ####################################################################
 ###########################################################################
 
-  if (( "$#" > 0 )); then
-    usage
-  else
-    echo "go ask your mother"
-  fi
+if (( "$#" > 0 )); then
+  usage
+else
+  echo "go ask your mother"
+fi
